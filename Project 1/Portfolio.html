@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haillee's Portfolio</title>
+    <link rel="stylesheet" href="main.css"> <!-- this is the link to CSS(style sheet) file 
+                                             this allows for all elements tags and seudos to be adjusted
+                                             and styled consistently across all the linked pages-->
+</head>
+<body>
+    <!--This is my header it has my, customized logo(my name), my headshot, and my navigation bar for 
+    about, projects, skills, and contact page. -->
+    <header class="header">
+        <div>
+            <img src="images/logo.png" alt="Haillee's logo" class="logo"/>
+            <img src="images/headshot.jpg" alt="Haillee's pic" class="headshot"/>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="portfolio.html" class="active">Home</a></li> <!---the Active class allows for a underline to appear under the tab the user is currently on--->
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--- this is my main section I used semantic elements to piece it together, the article element allows me to write 
+long text and the header tag makes my title on the page bigger than the rest. The description of HTML is retrieved 
+from chatgpt for a more acruate description-->
+    <main>
+        <section class="intro">
+            <article>
+                <h1>Welcome to My Portfolio! Get to know me.</h1>
+                <h2>What is HTML?</h2>
+                <p>HTML, rather known as HyperText Markup Language, is the standard language used to create and structure content on the web. 
+                    It provides the basic framework for web pages by using elements (tags) to define headings, paragraphs, links, images, tables, forms, and more.
+                     While HTML itself handles structure, it is often combined with CSS for styling and JavaScript for interactivity. 
+                     In short, HTML is the backbone of every website, making it possible to organize and display information in a way that browsers can render for users.</p>
+
+            </article>
+        </section>
+    </main>
+
+    <!--This footer will appear at the end/bottom of every linked page, so the about, skills, projects, and contact page-->
+    <footer id="customfooter">
+        <p>Copyright &copy; 2025 Haillee | Haillee.gaineshart@ontariotechu.net </p>
+    </footer>
+</body>
+</html>

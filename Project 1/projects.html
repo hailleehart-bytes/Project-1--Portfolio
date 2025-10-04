@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="main.css" /> <!-- this is the link to CSS(style sheet) file 
+                                             this allows for all elements tags and seudos to be adjusted
+                                             and styled consistently across all the linked pages-->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul><!-- this is the navigation bar. It appears at the top of each tab. 
+        these are all the linked pages on my portfolio website, each line is linked to a different html file
+        the links contain a name which appears at the top-->
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li><!---the Active class allows for a underline to appear under the tab the user is currently on--->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="project">
+    <h1> My Projects</h1>
+  </section>
+<!--This section is about past and current projects, each one has a header and a small body which describes the project
+and what is was bout, there are 4 key projects wich are most evident to me-->
+  <section class="projects">
+    <div class="projects-item">
+      <h3>Networking Case Study</h3>
+      <p>Created small topologies, using routers, switched and PCs. Implementing static, and dynamic routes, EIGRP and other Protocols</p>
+    </div>
+    <div class="projects-item">
+      <h3>E-Commerce Store Front</h3>
+      <p>Built a e-commerce store front using Methods, Classes and Python basics and GUI. 
+        The store carried electronics as well as acessories such as wireless mice, keyboards and headphones.</p>
+    </div>
+    <div class="projects-item">
+      <h3>Route Optimization Using Dijkstra's Algorithm</h3>
+      <p>Used graph theory to model differnt types of  networks (social, transportation etc.) as well as path and logistics planning
+Designed an algorithm using Python to determine the shortest paths to have efficient routing </p>
+    </div>
+    <div class="projects-item">
+      <h3>Portfolio website</h3>
+      <p>I curated a portfolio website about myslef using codes provided in lectures and tutorials, 
+        I tooks skills learned in class sessions and added my own code to them, choosing a color sceheme and adding
+      small elements to the code, such as interactive words and underlines in the navigation bar which indicates which page the user is on </p>
+    </div>
+  </section>
+
+  <footer id="customfooter"><!--This footer will appear at the end/bottom of every linked page, so the about, skills, projects, and contact page-->
+        <p>Copyright &copy; 2025 Haillee | Haillee.gaineshart@ontariotechu.net</p>
+    </footer>
+</body>
+</html>

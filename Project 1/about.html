@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="main.css" /> <!-- this is the link to CSS(style sheet) file 
+                                             this allows for all elements tags and seudos to be adjusted
+                                             and styled consistently across all the linked pages-->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul><!-- this is the navigation bar. It appears at the top of each tab. 
+        these are all the linked pages on my portfolio website, each line is linked to a different html file
+        the links contain a name which appears at the top-->
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li><!---the Active class allows for a underline to appear under the tab the user is currently on--->
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <article class="about">
+    <h1>About Me</h1>
+      <!--This is where I had planned to put the short video of me talking, the lines of code were
+      taken from the tutorial classes, once i were to upload my video i would have changed the mp4 and ogv titles
+      to match that of the one in the video folder-->
+    <div class="about-video">
+        <video controls width="640">
+            <source src="about-video.mp4" type="video/mp4" />
+            <source src="about-video.ogv" type="video/ogg"/>
+            your browser does not support the video tag.
+        </video>
+    </div> <!--This is a small explanation about who I am and a bit about my background-->
+    <p>Hello! My name is Haillee Gaines-Hart, I am 19 and a second year student and Ontario Tech University
+      I am studying Networking and IT Security. In the future I plan to become either a Cloud Architect, 
+      a Data Analyst or a Cyber Security Speciaist. My favorite hobbies are swimming, drawing, writing, and reading. I am 
+      currently working on two novels, and my favorite author right now is Jennifer Lynn Barnes. Her series are extrodinary and 
+      somewhat chilling, which makes sense as she has a degree in Psychology from Yale. I have one sister who is three years younger than me
+      she plays prep basketball and is much taller than me, which she gets from my dad.I love spending time in my room with my cats 
+      and taking naps. When I am not sleeping I'm hanging out with my friends; Tola, Makayla and Savannah. Or Josee and Amanda :) </p>
+  </article>
+</main>
+
+ <footer id="customfooter"><!--This footer will appear at the end/bottom of every linked page, so the about, skills, projects, and contact page-->
+        <p>Copyright &copy; 2025 Haillee | Haillee.gaineshart@ontariotechu.net</p>
+    </footer>
+</body>
+</html>

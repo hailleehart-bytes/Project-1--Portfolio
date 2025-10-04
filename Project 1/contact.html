@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="main.css" /> <!-- this is the link to CSS(style sheet) file 
+                                             this allows for all elements tags and seudos to be adjusted
+                                             and styled consistently across all the linked pages-->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul> <!-- this is the navigation bar. It appears at the top of each tab. 
+        these are all the linked pages on my portfolio website, each line is linked to a different html file
+        the links contain a name which appears at the top-->
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li><!---the Active class allows for a underline to appear under the tab the user is currently on--->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Name:<input type="text" name="name" required></label>
+        <label>Email:<input type="email" name="email" required></label>
+        <label>Cell No (NO SPACES):<input type="tel" name="phone" pattern="[0-9]{10}" required></label>
+        <label>Comments:<textarea name="comments" required></textarea></label>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+ <footer id="customfooter"><!--This footer will appear at the end/bottom of every linked page, so the about, skills, projects, and contact page-->
+        <p>Copyright &copy; 2025 Haillee | Haillee.gaineshart@ontariotechu.net</p>
+    </footer>
+</body>
+</html>

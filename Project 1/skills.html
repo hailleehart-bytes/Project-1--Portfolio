@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Skills</title>
+  <link rel="stylesheet" href="main.css" /> <!-- this is the link to CSS(style sheet) file 
+                                             this allows for all elements tags and seudos to be adjusted
+                                             and styled consistently across all the linked pages-->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul><!-- this is the navigation bar. It appears at the top of each tab. 
+        these are all the linked pages on my portfolio website, each line is linked to a different html file
+        the links contain a name which appears at the top-->
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li><!---the Active class allows for a underline to appear under the tab the user is currently on--->
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="skill"> <!--I chose to make the header of the page seperate from the body text so each could 
+    react differently from the css styling, Im not sure if it was touched on in the classes but i got the idea to do
+    this from Canva, because when elements are grouped together they reat in the same way, and I didn't want the 
+    header text to be highlighted and enlarged when hovered over-->
+        <h1>Skills</h1>
+  </section>
+
+  <section id="skills">
+        <ul class="clearfix">
+            <li class="skill 1">Python Basics</li>
+            <li class="skill 2">HTML and CSS Basics</li>
+            <li class="skill 3">Networking Protocols</li>
+            <li class="skill 4">Subnetting</li>
+            <li class="skill 5">Security Basics</li>
+            <li class="skill 6">Wireshark</li>
+            <li class="skill 7">Kali Linux</li>
+            <li class="skill 8">SQL</li>
+            <li class="skill 9">Cisco packet Tracer, CML, and Secure CRT</li>
+        </ul>
+    </section>
+    <footer id="customfooter"><!--This footer will appear at the end/bottom of every linked page, so the about, skills, projects, and contact page-->
+        <p>Copyright &copy; 2025 Haillee | Haillee.gaineshart@ontariotechu.net</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body{
+    margin:2; /*set a margin of 2 arounf the entire website page*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(255, 255, 255); /*Set the background color of the page*/
+    color: rgb(70,191,224);/*Sets the color of the main components to blue*/
+}
+
+/*NAVIGATION BAR STYLE*/
+
+header { /*this sets a gradient effect in the navigation bar, the two colors I selected
+    are grapefruit orange and white, at first it was set to 90deg but I didn't like the way it looked 
+    with such a small navigation bar so I switched it to 180 which looks much better*/
+    background: linear-gradient(180deg, rgb(225, 225, 225), rgb(229,102,78));
+    padding: 0px;
+}
+
+.headshot { /*For the picture of myslef on the first page I wanted it to sit partially between the body
+    of the page and header it think it looks better this way and doesnt make the page look empty
+    or the header look full. By playing around with the margin and border radius i was able to give the photo
+    a rounded look which was a good mistake. I also set the image to be on the left side so that it wasn't clashing with 
+    the logo's placement*/
+    float: left;
+    width: 400px;
+    margin-right: 300px;
+    border-radius: 300px;
+}
+
+.logo {
+    width: 500px
+}
+
+nav ul{ /*By using list-style: non i was able to remove the bullet points as they didn't look good
+    and placing them in the center rather than vertical or right placed it make the nav bar 
+    feel more modern and like traditional navigation bars*/
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li{ /*The inline block allows the nav bar contents to placed horizontally, the spacing allows each block to interact with the cursor without 
+    interfering with the look of the neighboring content
+    in the nav bar, the transition statement allows the background ot eh nav bar content to change color when the 
+    curser hovers over it*/
+    display: inline-block;
+    padding: 8px 12px;
+    transition: background-color 0.10s ease;
+}
+
+nav ul li a{ /*by setting the links to white they dont diminish the look 
+    of the website with the traditional purple look, and added a bold font weight for a more modern appeal*/
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a.active { /*This allows whichever html page the user is on to be identified by adding a blue underline underneath
+    the content page name*/
+  border-bottom: 4px solid rgb(70, 191, 224);
+}
+
+nav a:hover { /*This allows the navigation bar to become semi tranparent with a blue hue so the user knows which page they are about to be directed to*/
+    background-color: rgba(70, 191, 224, 0.5); 
+    border-radius: 4px;
+}
+
+/*INTRO STYLE*/
+
+.intro { /*Sets the home page text to be center placed blue background and white writing, padding is used for spacing around the text*/
+    text-align: center;
+    padding: 100px 20px;
+    background:rgb(70, 191, 224);
+    color: white;
+}
+
+/*ABOUT STYLE*/
+
+.about{/*sets the text to be centered with spacing arounf the text*/
+    text-align: center;
+    padding: 100px 20px;
+    background:rgb(70, 191, 224);
+    color: white;
+}
+
+/* PROJECT STYLE */
+
+.project{/*Makes the title text centered with decent spacing around it*/
+    text-align: center;
+    padding: 20px 20px;
+    background:rgb(70, 191, 224);
+    color:rgb(255, 255, 255);
+}
+
+.projects {/*Makes the main body text left shifted*/
+    text-align: left;
+    padding: 100px 20px;
+    background:rgb(70, 191, 224);
+    color: white;
+}
+
+.projects-item:hover { /*Using the hover, the specific project description with turn Orange for better viewing
+    the project tile then shifts from the left side to the center for better viewing*/
+    width: 700px;
+    background-color: orangered;
+    float: center;
+    margin-right: 100px;
+    margin-left:100px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.projects::after { /*Helps create extra space after the main body by creating an invisible seudo, had to google this practice as I 
+    didn't know how to resolve the issue of the footer being in the middle of the page, underneath the project tiles*/
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* CONTACT STYLE */
+.contact{ /*makes the text centered*/
+    text-align: center;
+    padding: 100px 20px;
+    background:rgb(70, 191, 224);
+    color: white;
+}
+.contact form {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+.contact form input, .contact form textarea, .contact form button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(229, 102, 78);
+}
+.contact form button {
+  background: rgb(255, 255, 255);
+  color: rgb(70, 191, 224);
+  border: none;
+  cursor: pointer;
+}
+.contact form button:hover { /*This makes the submit button change color when you hover over it to draw attention */
+  background: rgb(229, 102, 78);
+}
+
+/*SKILLS STYLE*/
+#skill{
+    text-align: center;
+    padding: 20px 20px;
+    background:rgb(70, 191, 224);
+    color:rgb(255, 255, 255);
+}
+
+#skills ul{
+    text-align: center;
+    list-style: none;
+    background-color:rgb(70, 191, 224);
+    color: rgb(255,255,255);
+    padding: 100px 20px;
+}
+#skills li:hover{ /*This was a complete accident, I wanted to make the skills section have the same effect as the projects section but instead of 
+                  creating boxes I found a way to enlarger the words while chaning the font when the cursor hovers over the skill*/
+    text-align: center;
+    font-size: larger;
+    padding: 10px 10px;
+    background:rgb(70, 191, 224);
+    color:rgb(229, 102,78);
+}
+
+#customfooter {
+    text-align: center;
+    background-color: rgb(229,102,78);
+    color: rgb(248, 251, 252);
+    padding: 0px;
+}
+
+/* RESPONSE TO SCREEN SIZE */
+@media (max-width: 768px) { /*This is only applied for screen smaller than 768px so phones and tablets
+                            this allows for a more flexible viewing*/
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
