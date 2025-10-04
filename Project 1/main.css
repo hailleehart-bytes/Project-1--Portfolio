@@ -99,7 +99,7 @@ nav a:hover { /*This allows the navigation bar to become semi tranparent with a 
 .projects-item:hover { /*Using the hover, the specific project description with turn Orange for better viewing
     the project tile then shifts from the left side to the center for better viewing*/
     width: 700px;
-    background-color: orangered;
+    background-color: rgb(229, 102, 78);
     float: center;
     margin-right: 100px;
     margin-left:100px;
