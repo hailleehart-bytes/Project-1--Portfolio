@@ -1,4 +1,4 @@
-# Haillee's Portfolio Website 🌐  
+# Haillee's Portfolio Website 
 **Course:** INFR3120 – Web and Scripting Programming  
 **Assignment 1 – Portfolio Site using HTML5 and CSS3**  
 **Author:** Haillee Gaineshart  
@@ -61,14 +61,12 @@ All validation tools were used before submission:
 - Project managed using **Git** and **GitHub**.  
 - Multiple commits show progress at different stages of development.  
 - The site is deployed live using **GitHub Pages**:  
-https://hailleehart-bytes.github.io/your-repo-name/
+https://github.com/hailleehart-bytes/Project-1--Portfolio.git
 ---
 
 ## External Code References
 Some HTML code was written by me as the main format was developed from tutorial content howver the CSS code was mainly written by me as I personalized my website to transition in certain ways with certain colors, some elements, like underlining, and text enlarging was found through VSCODE's auto-fill, ALL CODE WAS USED AND INSPIRED BY TURTORIAL AND LECTURE CODE EXAMPLES NO CODE WAS USED FROM THE INTERNET OR EXTERNAL SOURCES:
-- CSS Gradient Syntax — [MDN Web Docs](https://developer.mozilla.org/)  
-- Media Query Example — [W3Schools](https://www.w3schools.com/)
-
+- Media Query Example — [W3Schools](https://www.w3schools.com/) <----Used to get more infomation and see examples on how to format my code
 ---
 
 ## Contact

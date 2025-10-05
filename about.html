@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="main.css" /> <!-- this is the link to CSS(style sheet) file 
                                              this allows for all elements tags and seudos to be adjusted
                                              and styled consistently across all the linked pages-->
+
+ <!--These are the different view points for differents sized screens or rather devices, the page will adjust to a cell phones screen of
+max 600px, a tablet screen ranging between 601 and 1024px, and for laptops a screen width of min 1025px. These are not just rules but help the program
+understand and easuly identify whic device is being used for viewing depending on th pixel size-->
+  <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 600px)">
+  <link rel="stylesheet" href="tablet.css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+  <link rel="stylesheet" href="laptop.css" media="only screen and (min-width: 1025px)">
+  
 </head>
 <body>
   <header>
@@ -23,16 +31,21 @@
     </nav>
   </header>
 
+
   <main>
   <article class="about">
     <h1>About Me</h1>
       <!--This is where I had planned to put the short video of me talking, the lines of code were
       taken from the tutorial classes, once i were to upload my video i would have changed the mp4 and ogv titles
       to match that of the one in the video folder-->
+  <div>
+    <img src="pics/aboutmepic.jpg" alt="Haillee's pic" class="abmepic"/>
+  </div>
+
     <div class="about-video">
         <video controls width="640">
-            <source src="about-video.mp4" type="video/mp4" />
-            <source src="about-video.ogv" type="video/ogg"/>
+            <source src="vids/aboutme.mp4" type="video/mp4" class="vid" />
+            <source src="vids/aboutme.mp4" type="video/ogg" class="vid"/>
             your browser does not support the video tag.
         </video>
     </div> <!--This is a small explanation about who I am and a bit about my background-->

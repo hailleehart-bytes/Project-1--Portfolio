@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="main.css"> <!-- this is the link to CSS(style sheet) file 
                                              this allows for all elements tags and seudos to be adjusted
                                              and styled consistently across all the linked pages-->
+
+<!--These are the different view points for differents sized screens or rather devices, the page will adjust to a cell phones screen of
+max 600px, a tablet screen ranging between 601 and 1024px, and for laptops a screen width of min 1025px. These are not just rules but help the program
+understand and easuly identify whic device is being used for viewing depending on th pixel size-->
+    <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="laptop.css" media="only screen and (min-width: 1025px)">
+
 </head>
 <body>
     <!--This is my header it has my, customized logo(my name), my headshot, and my navigation bar for 
@@ -34,10 +42,10 @@ from chatgpt for a more acruate description-->
             <article>
                 <h1>Welcome to My Portfolio! Get to know me.</h1>
                 <h2>What is HTML?</h2>
-                <p>HTML, rather known as HyperText Markup Language, is the standard language used to create and structure content on the web. 
-                    It provides the basic framework for web pages by using elements (tags) to define headings, paragraphs, links, images, tables, forms, and more.
-                     While HTML itself handles structure, it is often combined with CSS for styling and JavaScript for interactivity. 
-                     In short, HTML is the backbone of every website, making it possible to organize and display information in a way that browsers can render for users.</p>
+                <p>HTML, rather known as HyperText Markup Language, is the standard language used to create and structure content on the web.
+                 It provides the basic framework for web pages by using elements (tags) to define headings, paragraphs, links, images, tables, forms, and more.
+                While HTML itself handles structure, it is often combined with CSS for styling and JavaScript for interactivity. 
+                In short, HTML is the backbone of every website, making it possible to organize and display information in a way that browsers can render for users.</p>
 
             </article>
         </section>

@@ -11,7 +11,7 @@ header { /*this sets a gradient effect in the navigation bar, the two colors I s
     are grapefruit orange and white, at first it was set to 90deg but I didn't like the way it looked 
     with such a small navigation bar so I switched it to 180 which looks much better*/
     background: linear-gradient(180deg, rgb(225, 225, 225), rgb(229,102,78));
-    padding: 0px;
+    padding: -10px;
 }
 
 .headshot { /*For the picture of myslef on the first page I wanted it to sit partially between the body
@@ -21,19 +21,24 @@ header { /*this sets a gradient effect in the navigation bar, the two colors I s
     the logo's placement*/
     float: left;
     width: 400px;
-    margin-right: 300px;
     border-radius: 300px;
+    top: -400px;
+    position: relative;
 }
 
 .logo {
-    width: 500px
+    width: 550px;
+    float: center;
+    margin-left: 500px;
 }
+
 
 nav ul{ /*By using list-style: non i was able to remove the bullet points as they didn't look good
     and placing them in the center rather than vertical or right placed it make the nav bar 
     feel more modern and like traditional navigation bars*/
     list-style: none;
     text-align: center;
+   
 }
 
 nav ul li{ /*The inline block allows the nav bar contents to placed horizontally, the spacing allows each block to interact with the cursor without 
@@ -78,6 +83,35 @@ nav a:hover { /*This allows the navigation bar to become semi tranparent with a 
     padding: 100px 20px;
     background:rgb(70, 191, 224);
     color: white;
+}
+
+.abmepic { /*For the picture of myslef on the first page I wanted it to sit partially between the body
+    of the page and header it think it looks better this way and doesnt make the page look empty
+    or the header look full. By playing around with the margin and border radius i was able to give the photo
+    a rounded look which was a good mistake. I also set the image to be on the left side so that it wasn't clashing with 
+    the logo's placement*/
+    float:left;
+    width: 400px;
+    border-radius: 300px;
+    top: -40px;
+    position: relative;
+}
+
+/*This sets the size/ dimensions of the video*/
+.about-video video {
+  width: 80%;
+  max-width: 640px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.10s ease, box-shadow 0.10s ease;
+}
+
+/*This enlarges the video when the cursor hovers over it, it is scaled up sligtly by 1.03 as it doesnt
+make the video look to large to over take the other elements on the page, but still changes it's size so 
+it catches the user's eye and adds an underglow in orange to highligh the video*/
+.about-video video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(229, 102, 78, 2);
 }
 
 /* PROJECT STYLE */

@@ -1,0 +1,20 @@
+/* Styles for tablets */
+body {
+  font-size: 16px;/*Changes the font size to be appropriate for tablets or larger devices under 1024px*/
+  padding: 20px;
+}
+
+nav ul {
+  flex-direction: row; /*Changes the navigation bar, as tablets have smaller screens than laptops, so it 
+                         positions the nav bar to have the links easy to access*/
+  justify-content: space-around;
+}
+
+.header {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.headshot {
+  top: -5px;
+}

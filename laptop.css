@@ -1,0 +1,8 @@
+/* Styles for laptops/desktops */
+body {
+  font-size: 18px;/*Changes the font size to be appropriate for desktops, monitors or laptops*/
+  margin: 40px;
+}
+nav ul {
+  justify-content: flex-end;
+}

@@ -1,0 +1,24 @@
+/* STYLE FOR PHONES */
+body {
+  font-size: 14px; /*Changes the font size to be appropriate for cellular devices 600px*/
+  padding: 10px;
+}
+nav ul {
+  flex-direction: column; /*Changes the navigation bar, as cell phones have smaller screens, so it 
+                         positions the nav bar to have the links easy to access*/
+  align-items: center;
+}
+
+.header {
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo {
+  margin-left: 0;
+}
+
+.headshot {
+  top: 0;
+  width: 80px;
+}

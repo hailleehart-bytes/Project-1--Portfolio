@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="main.css" /> <!-- this is the link to CSS(style sheet) file 
                                              this allows for all elements tags and seudos to be adjusted
                                              and styled consistently across all the linked pages-->
+
+ <!--These are the different view points for differents sized screens or rather devices, the page will adjust to a cell phones screen of
+max 600px, a tablet screen ranging between 601 and 1024px, and for laptops a screen width of min 1025px. These are not just rules but help the program
+understand and easuly identify whic device is being used for viewing depending on th pixel size-->
+  <link rel="stylesheet" href="mobile.css" media="only screen and (max-width: 600px)">
+  <link rel="stylesheet" href="tablet.css" media="only screen and (min-width: 601px) and (max-width: 1024px)">
+  <link rel="stylesheet" href="laptop.css" media="only screen and (min-width: 1025px)">
+  
 </head>
 <body>
   <header>
